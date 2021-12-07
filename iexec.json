@@ -1,0 +1,54 @@
+{
+  "description": "My iExec ressource description, must be at least 150 chars long in order to pass the validation checks. Describe your application, dataset or workerpool to your users",
+  "license": "MIT",
+  "author": "?",
+  "social": {
+    "website": "?",
+    "github": "?"
+  },
+  "logo": "logo.png",
+  "buyConf": {
+    "params": {
+      "iexec_args": ""
+    },
+    "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "trust": "0",
+    "callback": "0x0000000000000000000000000000000000000000"
+  },
+  "app": {
+    "owner": "0x026aD6ECd5124809d5f3b393F6a94ac195CA55b9",
+    "name": "hello-openvino-onnx",
+    "type": "DOCKER",
+    "multiaddr": "docker.io/luiscarlosiexec/hello-openvino-onnx:1.0.10",
+    "checksum": "0xc64f5781afc5331076eb0565bf6d4d5848868abf43e123ffd3ddd870be0ba642",
+    "mrenclave": {
+      "provider": "SCONE",
+      "version": "v5",
+      "entrypoint": "/root/miniconda/bin/python3.7 /app/app.py",
+      "heapSize": 1073741824,
+      "fingerprint": "e80b22b67b5b4b6529275d4ff9c5f27a6e3e8f2b7c4ffa23ed40fcc9433450c1"
+    }
+  },
+  "dapps": [
+    {
+      "name": "Recomanded-dapp-for-MyDataset",
+      "addresses": {
+        "5": "0x0000000000000000000000000000000000000000"
+      },
+      "buyConf": {
+        "params": {
+          "iexec_args": ""
+        },
+        "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "trust": "0",
+        "callback": "0x0000000000000000000000000000000000000000"
+      }
+    }
+  ],
+  "dataset": {
+    "owner": "0x026aD6ECd5124809d5f3b393F6a94ac195CA55b9",
+    "name": "model.onnx",
+    "multiaddr": "https://raw.githubusercontent.com/luisccastillo/hello-openvino-onnx/main/datasets/encrypted/model.onnx.enc",
+    "checksum": "0x0786ada9ba97870d9137ff8534972548aa2b822a7999dade383f51a53db0fecc"
+  }
+}

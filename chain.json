@@ -1,0 +1,18 @@
+{
+  "default": "bellecour",
+  "chains": {
+    "goerli": {},
+    "viviani": { "sms": "https://v6.sms.debug-tee-services.viviani.iex.ec" },
+    "mainnet": {},
+    "bellecour": {},
+    "enterprise": {},
+    "enterprise-testnet": {}
+  },
+  "providers": {
+    "infura": {
+      "projectId": "4c7b7e11e8514a17beb8b5516061af29",
+      "projectSecret": "8b643c16c467487a935088ce9b5dc367"
+    },
+    "quorum": 1
+  }
+}
